@@ -52,3 +52,10 @@ const zucchine = [
         lunghezza: 8
     },
 ];
+
+let sum = 0;
+zucchine.forEach(element => {
+    const peso = element.peso;
+    sum += peso;
+});
+console.log(sum + ' grammi');
