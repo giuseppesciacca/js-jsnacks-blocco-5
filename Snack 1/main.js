@@ -58,4 +58,4 @@ zucchine.forEach(element => {
     const peso = element.peso;
     sum += peso;
 });
-console.log(sum + ' grammi');
+console.log(sum + ' grammi, cioè ' + (sum / 1000) + ' kg');
