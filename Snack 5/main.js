@@ -5,6 +5,7 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 4651, 65, 16, 18, 88];
 
+let min = 0
 let max = array.length;
 console.log(max);
 
@@ -17,5 +18,8 @@ function newArray(array, min, max) {
     });
     return newArray
 }
+console.log(newArray(array, min, max));
 
-console.log(newArray(array, 0, max));
+//oppure così usando filter
+const newArray2 = array.filter(num => num >= min && num < max);
+console.log(newArray2);
